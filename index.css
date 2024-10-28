@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.workspace {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2e2e2e;
+}
+
+header h1 {
+    color: #f5f5f5;
+    font-size: 1.5em;
+}
+
+#theme-toggle, #logout {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#theme-toggle:hover, #logout:hover {
+    color: #61dafb;
+}
+
+/* Video Call Section */
+.video-call-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-call-section h2 {
+    color: #61dafb;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#localVideo, #remoteVideo {
+    width: 100%;
+    height: 250px;
+    background-color: #111;
+    border-radius: 8px;
+    border: 2px solid #61dafb;
+    transition: transform 0.3s;
+}
+
+#localVideo:hover, #remoteVideo:hover {
+    transform: scale(1.02);
+}
+
+.video-call-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1f1f1f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #21a1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+    }
+    
+    #localVideo, #remoteVideo {
+        height: 200px;
+    }
+}
