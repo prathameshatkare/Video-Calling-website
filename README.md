@@ -3,7 +3,7 @@
 
 # Video Calling Website
 
-![Video Calling Website](images/video-call-thumbnail.png)
+![Video Calling Website]((https://prathameshatkare.github.io/Video-Calling-website)g)
 
 ## Description
 
